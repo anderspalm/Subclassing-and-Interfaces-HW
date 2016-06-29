@@ -16,6 +16,8 @@ System.out.print(ClassName.name); --> "android"
 Also, a problem of using static is that you can only have one value of the variable in the project.
 
 
+
+
 2.
 Does it make sense to write getter and setter methods for a public member variable?
 What about private variables?
@@ -28,6 +30,8 @@ changes) to the code where you want to interact with the variable. You can also 
 that would help the program such as presence checkers.
 
 
+
+
 3.
 What are some benefits of making member variables private?
 
@@ -38,6 +42,8 @@ You can create a bunch of methods around the variable that can be then called el
 vilification, change in value checker and you can get back to making methods for it whenever you please.
 
 
+
+
 4.
 If class A extends class B, which is the super class and which is the sub class? Which would you call parent, and
 which would you call child?
@@ -45,11 +51,15 @@ which would you call child?
 B is the Super class (parent) as A (child) is attempting to inherit from it.
 
 
+
+
 5.
 What does it mean for a class to inherit methods and/or variables from its parent class?
 
 The class that inherits from another may use methods and variables within the other, however it may
 not use private versions. These variables can only be accessed through getter and setter methods.
+
+
 
 
 6.
@@ -65,6 +75,8 @@ double temperature = ((Refrigerator)myAppliance.getTemperature());
 This way the instance is forced to look in the Refrigerator class.
 
 
+
+
 7.
 In a normal class (also called a concrete class), do you need to implement all of the methods, or can your simply
 declare some? What about in an abstract class?
@@ -74,11 +86,15 @@ In an abstract class you are bound in contract to force the nearest non abstract
 that are abstract.
 
 
+
+
 8.
 What about an interface? Can you implement any methods in an interface? Can you declare methods in an interface?
 
 You may not implement methods in the interface but you can initialize the beginnings of a method and this must
 then fully formed with a body and possibly arguments in each nearest linked concrete child of the main abstract class.
+
+
 
 
 9.
@@ -90,11 +106,15 @@ basic methods with them for the children to use. A class that is declared final 
 the class will not be able to instantiate itself nor have subclasses instantiate in its stead.
 
 
+
+
 10.
 What happens when a method overrides another method? If a parent and child class have methods with the same name,
 when you call that method on an instance of the child class, which implementation of the method will be executed?
 
 Since we are calling on the instance of the subclass, it is the method of this class that will prevail.
+
+
 
 
 11.
